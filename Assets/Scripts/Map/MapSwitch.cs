@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class MapSwitch : MonoBehaviour
 {
-    public GameObject[] background;
+    public GameObject[] maps;
     public Button NextButton;
     public Button PrevButton;
 
@@ -20,15 +20,15 @@ public class MapSwitch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (index >= background.Length - 1)
+        if (index >= maps.Length - 1)
         {
-            index = background.Length - 1;
+            index = maps.Length - 1;
             NextButton.gameObject.SetActive(false);
         }
         if (index <= 0)
         {
             index = 0;
-            background[0].gameObject.SetActive(true);
+            maps[0].gameObject.SetActive(true);
             PrevButton.gameObject.SetActive(false);
 
         }
@@ -38,10 +38,10 @@ public class MapSwitch : MonoBehaviour
     {
         index += 1;
 
-        for (int i = 0; i < background.Length; i++)
+        for (int i = 0; i < maps.Length; i++)
         {
-            background[i].gameObject.SetActive(false);
-            background[index].gameObject.SetActive(true);
+            maps[i].gameObject.SetActive(false);
+            maps[index].gameObject.SetActive(true);
             PrevButton.gameObject.SetActive(true);
         }
 
@@ -52,10 +52,10 @@ public class MapSwitch : MonoBehaviour
     {
         index -= 1;
 
-        for (int i = 0; i < background.Length; i++)
+        for (int i = 0; i < maps.Length; i++)
         {
-            background[i].gameObject.SetActive(false);
-            background[index].gameObject.SetActive(true);
+            maps[i].gameObject.SetActive(false);
+            maps[index].gameObject.SetActive(true);
             NextButton.gameObject.SetActive(true);
         }
 
