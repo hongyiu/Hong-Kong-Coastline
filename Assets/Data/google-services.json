@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "489013866218",
+    "project_id": "hong-kong-coastline",
+    "storage_bucket": "hong-kong-coastline.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489013866218:android:ef7e36efc9ab6e9386b193",
+        "android_client_info": {
+          "package_name": "com.yiuyu.HongKongCoastline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489013866218-lju0ig17tskj4438juqomo9c0f8om4bl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwJ-B8100tDcpye7C7TIxCDAolLCKXuuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489013866218-lju0ig17tskj4438juqomo9c0f8om4bl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "489013866218-3lamc2r5ep5ah1n6o09haml60maknhh7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.yiuyu.HongKongCoastline"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
