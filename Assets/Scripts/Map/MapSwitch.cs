@@ -15,6 +15,10 @@ public class MapSwitch : MonoBehaviour
     void Start()
     {
         index = 0;
+        for (int i = 1; i < maps.Length; i++)
+        {
+            maps[i].gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame
