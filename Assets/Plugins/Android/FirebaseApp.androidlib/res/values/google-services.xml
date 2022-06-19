@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
+  <string name="gcm_defaultSenderId" translatable="false">489013866218</string>
+  <string name="google_storage_bucket" translatable="false">hong-kong-coastline.appspot.com</string>
+  <string name="project_id" translatable="false">hong-kong-coastline</string>
+  <string name="google_api_key" translatable="false">AIzaSyBwJ-B8100tDcpye7C7TIxCDAolLCKXuuw</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBwJ-B8100tDcpye7C7TIxCDAolLCKXuuw</string>
+  <string name="google_app_id" translatable="false">1:489013866218:android:ef7e36efc9ab6e9386b193</string>
+  <string name="default_web_client_id" translatable="false">489013866218-lju0ig17tskj4438juqomo9c0f8om4bl.apps.googleusercontent.com</string>
+</resources>
