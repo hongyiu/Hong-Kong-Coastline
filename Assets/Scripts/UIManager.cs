@@ -7,6 +7,10 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
 
     //Screen object variables
+    public GameObject MapPanel;
+    public GameObject QuizPanel;
+
+    public GameObject AuthPanel;
     public GameObject loginUI;
     public GameObject registerUI;
 
@@ -23,6 +27,26 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    //Functions to change to Quiz Panel
+    public void StartQuiz() //Start Quiz
+    {
+        MapPanel.SetActive(false);
+        QuizPanel.SetActive(true);
+    }
+    public void QuitQuiz() //Finish Quiz
+    {
+        MapPanel.SetActive(true);
+        QuizPanel.SetActive(false);
+    }
+
+    public void StartAuth() 
+    {
+        AuthPanel.SetActive(true);
+    }
+    public void QuitAuth() //start Auth
+    {
+        AuthPanel.SetActive(false);
+    }
     //Functions to change the login screen UI
     public void LoginScreen() //Back button
     {
