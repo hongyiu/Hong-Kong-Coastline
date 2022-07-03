@@ -5620,7 +5620,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1785946013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6636,11 +6636,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2068763202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfc9f344818574c84b1723a65d40a369, type: 3}
+  m_Script: {fileID: 11500000, guid: adf12171281884627a2bc8c18a389a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loginUI: {fileID: 1817443157}
-  registerUI: {fileID: 2051741366}
+  MapPanel: {fileID: 0}
+  QuizPanel: {fileID: 0}
+  AuthPanel: {fileID: 0}
+  loginUI: {fileID: 0}
+  registerUI: {fileID: 0}
 --- !u!4 &2068763204
 Transform:
   m_ObjectHideFlags: 0
