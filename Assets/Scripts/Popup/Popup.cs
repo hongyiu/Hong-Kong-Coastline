@@ -10,12 +10,16 @@ public class Popup : MonoBehaviour
 	[SerializeField] Button _button2;
 	[SerializeField] Text _button1Text;
 	[SerializeField] Text _button2Text;
-	[SerializeField]Text _popupText;
+	[SerializeField] Text _popupText;
 
-	public void Init(Transform canvas, string popupMessage, string btn1txt, string btn2txt, Action action) {
+	public void Init(Transform canvas, string popupMessage, string btn1txt = "Close", string btn2txt = "", Action action = null) {
 		_popupText.text = popupMessage;
 		_button1Text.text = btn1txt;
 		_button2Text.text = btn2txt;
+
+		if (btn2txt == "") {
+			_button2.gameObject.SetActive(false);
+		}
 
 		transform.SetParent(canvas);
 		transform.localScale = Vector3.one;
