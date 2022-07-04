@@ -5,6 +5,7 @@ using Firebase;
 using Firebase.Auth;
 using Firebase.Database;
 using TMPro;
+using System.Linq;
 
 public class FirebaseManager : MonoBehaviour
 {
@@ -64,6 +65,8 @@ public class FirebaseManager : MonoBehaviour
         Debug.Log("Setting up Firebase Auth");
         //Set the authentication instance object
         auth = FirebaseAuth.DefaultInstance;
+
+        DBreference = FirebaseDatabase.DefaultInstance.RootReference;
     }
 
     public void ClearLoginFeilds()
@@ -94,6 +97,7 @@ public class FirebaseManager : MonoBehaviour
 
     public void SaveDataButton()
     {
+        Debug.Log("Start save data to firebase realtime database");
         StartCoroutine(UpdateScore(int.Parse("1")));
     }
 
@@ -228,8 +232,8 @@ public class FirebaseManager : MonoBehaviour
     private IEnumerator UpdateScore(int _xp)
     {
         //Set the currently logged in user xp
-        var DBTask = DBreference.Child("users").Child(User.UserId).Child("score").SetValueAsync(_xp);
-
+        var DBTask = DBreference.Child("users").Child("score").SetValueAsync(_xp);
+        
         yield return new WaitUntil(predicate: () => DBTask.IsCompleted);
 
         if (DBTask.Exception != null)

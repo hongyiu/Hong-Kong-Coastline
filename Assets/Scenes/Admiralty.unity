@@ -1715,7 +1715,6 @@ MonoBehaviour:
   QuestionTxt: {fileID: 508377847}
   ScoreTxt: {fileID: 1567308673}
   score: 0
-  firebaseManager: {fileID: 0}
 --- !u!4 &290930669
 Transform:
   m_ObjectHideFlags: 0
@@ -7287,7 +7286,7 @@ GameObject:
   - component: {fileID: 1258792510}
   m_Layer: 0
   m_Name: FirebaseManager
-  m_TagString: Untagged
+  m_TagString: FirebaseManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
