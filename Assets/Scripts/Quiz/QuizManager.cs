@@ -44,8 +44,12 @@ public class QuizManager : MonoBehaviour
         ScorePanel.SetActive(true);
         ScoreTxt.text = score + "/" + totalQuestions;
         QuestionPanel.SetActive(false);
+        
         firebaseManager = GameObject.Find("FirebaseManager").GetComponent<FirebaseManager>();
-        firebaseManager.SaveDataButton();
+        if (firebaseManager.User != null)
+        {
+            firebaseManager.SaveDataButton();
+        }
     }
 
     public void correct()

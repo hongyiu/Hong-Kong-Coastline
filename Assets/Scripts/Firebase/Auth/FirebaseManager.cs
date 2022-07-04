@@ -144,6 +144,7 @@ public class FirebaseManager : MonoBehaviour
             Debug.LogFormat("User signed in successfully: {0} ({1})", User.DisplayName, User.Email);
             warningLoginText.text = "";
             confirmLoginText.text = "Logged In";
+            UIManager.instance.QuitAuth();
         }
     }
 
@@ -232,7 +233,7 @@ public class FirebaseManager : MonoBehaviour
     private IEnumerator UpdateScore(int _xp)
     {
         //Set the currently logged in user xp
-        var DBTask = DBreference.Child("users").Child("score").SetValueAsync(_xp);
+        var DBTask = DBreference.Child("users").Child(User.UserId).Child("score").SetValueAsync(_xp);
         
         yield return new WaitUntil(predicate: () => DBTask.IsCompleted);
 
