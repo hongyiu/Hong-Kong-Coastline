@@ -31,9 +31,11 @@ public class FirebaseManager : MonoBehaviour
     public TMP_InputField passwordRegisterVerifyField;
     public TMP_Text warningRegisterText;
 
+    private int highestScore;
+
     //User Data variables
-    [Header("UserData")]
-    public TMP_InputField scoreField;
+    // [Header("UserData")]
+    // public TMP_InputField scoreField;
 
     void Awake()
     {
@@ -95,10 +97,14 @@ public class FirebaseManager : MonoBehaviour
         StartCoroutine(Register(emailRegisterField.text, passwordRegisterField.text, usernameRegisterField.text));
     }
 
-    public void SaveDataButton()
+    public void SaveScoreData(string location, int score)
     {
         Debug.Log("Start save data to firebase realtime database");
-        StartCoroutine(UpdateScore(int.Parse("1")));
+        StartCoroutine(LoadScore(location));
+        if (score > highestScore)
+        {
+            StartCoroutine(UpdateScore(location, score));
+        }
     }
 
     private IEnumerator Login(string _email, string _password)
@@ -230,10 +236,10 @@ public class FirebaseManager : MonoBehaviour
         }
     }
     
-    private IEnumerator UpdateScore(int _xp)
+    private IEnumerator UpdateScore(string _location, int _score)
     {
-        //Set the currently logged in user xp
-        var DBTask = DBreference.Child("users").Child(User.UserId).Child("score").SetValueAsync(_xp);
+        //Set the currently logged in user score
+        var DBTask = DBreference.Child("users").Child(User.UserId).Child("score").Child(_location).SetValueAsync(_score);
         
         yield return new WaitUntil(predicate: () => DBTask.IsCompleted);
 
@@ -247,4 +253,30 @@ public class FirebaseManager : MonoBehaviour
         }
     }
 
+    private IEnumerator LoadScore(string _location)
+    {
+        
+        var DBTask = DBreference.Child("users").Child(User.UserId).Child("score").Child(_location).GetValueAsync();
+
+        yield return new WaitUntil(predicate: () => DBTask.IsCompleted);
+
+        if (DBTask.Exception != null)
+        {
+            Debug.LogWarning(message: $"Failed to register task with {DBTask.Exception}");
+        }
+        else
+        {
+            //Data has been retrieved
+            DataSnapshot snapshot = DBTask.Result;
+
+            if (snapshot == null)
+            {
+                highestScore = 0;
+            }
+            else
+            {
+                highestScore = int.Parse(snapshot.Value.ToString());
+            }
+        }
+    }
 }

@@ -1714,7 +1714,7 @@ MonoBehaviour:
   ScorePanel: {fileID: 1350993581}
   QuestionTxt: {fileID: 508377847}
   ScoreTxt: {fileID: 1567308673}
-  score: 0
+  Location: admiralty
 --- !u!4 &290930669
 Transform:
   m_ObjectHideFlags: 0
@@ -7313,7 +7313,6 @@ MonoBehaviour:
   passwordRegisterField: {fileID: 358381453}
   passwordRegisterVerifyField: {fileID: 2066949060}
   warningRegisterText: {fileID: 2124226436}
-  scoreField: {fileID: 0}
 --- !u!4 &1258792511
 Transform:
   m_ObjectHideFlags: 0
