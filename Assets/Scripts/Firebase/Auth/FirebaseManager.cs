@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Firebase;
 using Firebase.Auth;
 using Firebase.Database;
@@ -31,9 +32,14 @@ public class FirebaseManager : MonoBehaviour
     public TMP_InputField passwordRegisterVerifyField;
     public TMP_Text warningRegisterText;
 
-    private int highestScore;
+    [Header("Control")]
+    public GameObject loginButton;
+    public GameObject logoutButton;
+    public Text logoutText;
 
+    
     //User Data variables
+    private int highestScore;
     // [Header("UserData")]
     // public TMP_InputField scoreField;
 
@@ -53,6 +59,18 @@ public class FirebaseManager : MonoBehaviour
                 Debug.LogError("Could not resolve all Firebase dependencies: " + dependencyStatus);
             }
         });
+
+        if (User != null)
+        {
+            logoutText.text = User.Email + " (logout)";
+            loginButton.SetActive(false);
+            logoutButton.SetActive(true);
+        } else
+        {
+            loginButton.SetActive(true);
+            logoutButton.SetActive(false);
+            logoutText.text = "logout";
+        }
     }
 
     void Start() 
@@ -95,6 +113,17 @@ public class FirebaseManager : MonoBehaviour
     {
         //Call the register coroutine passing the email, password, and username
         StartCoroutine(Register(emailRegisterField.text, passwordRegisterField.text, usernameRegisterField.text));
+    }
+    //Function for the sign out button
+    public void SignOutButton()
+    {
+        auth.SignOut();
+        loginButton.SetActive(true);
+        logoutButton.SetActive(false);
+        logoutText.text = "logout";
+        UIManager.instance.LoginScreen();
+        ClearRegisterFeilds();
+        ClearLoginFeilds();
     }
 
     public void SaveScoreData(string location, int score)
@@ -150,6 +179,9 @@ public class FirebaseManager : MonoBehaviour
             Debug.LogFormat("User signed in successfully: {0} ({1})", User.DisplayName, User.Email);
             warningLoginText.text = "";
             confirmLoginText.text = "Logged In";
+            logoutText.text = User.Email + " (logout)";
+            loginButton.SetActive(false);
+            logoutButton.SetActive(true);
             UIManager.instance.QuitAuth();
         }
     }
