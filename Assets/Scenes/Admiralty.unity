@@ -786,8 +786,8 @@ RectTransform:
   m_Father: {fileID: 931789392}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 0.5}
@@ -841,7 +841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AspectMode: 2
+  m_AspectMode: 3
   m_AspectRatio: 0.75
 --- !u!1 &122897095
 GameObject:
@@ -1438,8 +1438,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -210, y: -297}
-  m_SizeDelta: {x: 61.9976, y: 61.9976}
+  m_AnchoredPosition: {x: -207, y: -295}
+  m_SizeDelta: {x: 48.4634, y: 48.4634}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &220342892
 MonoBehaviour:
@@ -2520,8 +2520,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -245, y: -91}
-  m_SizeDelta: {x: 61.9976, y: 61.9976}
+  m_AnchoredPosition: {x: -236.25916, y: -91}
+  m_SizeDelta: {x: 44.5159, y: 44.5159}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &390993347
 MonoBehaviour:
@@ -2675,7 +2675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2d86286dba544fbad9458555e01829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Content: Hong Kong City Hall
+  Content: "Hong Kong City Hall \u9999\u6E2F\u5927\u6703\u5802"
 --- !u!1 &406529870
 GameObject:
   m_ObjectHideFlags: 0
@@ -8947,8 +8947,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55, y: -221}
-  m_SizeDelta: {x: 61.9976, y: 61.9976}
+  m_AnchoredPosition: {x: -61.382996, y: -221}
+  m_SizeDelta: {x: 49.232, y: 49.2317}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1443296433
 MonoBehaviour:
@@ -8962,10 +8962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2d86286dba544fbad9458555e01829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Content: 'Admiralty Station
-
-
-    Navy Dock'
+  Content: "Admiralty Station \u91D1\u9418\u7AD9\n\nNavy Dock \u6D77\u8ECD\u8239\u5862"
 --- !u!1818360610 &1443296434
 ScaleConstraint:
   m_ObjectHideFlags: 0
@@ -10633,8 +10630,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 105, y: -214}
-  m_SizeDelta: {x: 61.9976, y: 61.9976}
+  m_AnchoredPosition: {x: 98.51489, y: -214}
+  m_SizeDelta: {x: 49.0274, y: 49.0274}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1683529946
 MonoBehaviour:
@@ -11490,8 +11487,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: -104}
-  m_SizeDelta: {x: 61.9976, y: 61.9976}
+  m_AnchoredPosition: {x: 0.89582, y: -96.279}
+  m_SizeDelta: {x: 49.794, y: 49.7944}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1789707549
 MonoBehaviour:
@@ -11505,10 +11502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2d86286dba544fbad9458555e01829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Content: 'Tamar Park
-
-
-    HMS Tamar Naval Base'
+  Content: "Tamar Park \u6DFB\u99AC\u516C\u5712\n\nHMS Tamar Naval Base \u6DFB\u99AC\u8266\u6D77\u8ECD\u57FA\u5730"
 --- !u!1818360610 &1789707550
 ScaleConstraint:
   m_ObjectHideFlags: 0
@@ -13019,8 +13013,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: -318}
-  m_SizeDelta: {x: 61.9976, y: 61.9976}
+  m_AnchoredPosition: {x: -12.3311, y: -318}
+  m_SizeDelta: {x: 47.3355, y: 47.3355}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2013345004
 MonoBehaviour:
@@ -13034,7 +13028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2d86286dba544fbad9458555e01829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Content: Pacific Place
+  Content: "Pacific Place \u592A\u53E4\u5EE3\u5834"
 --- !u!1818360610 &2013345005
 ScaleConstraint:
   m_ObjectHideFlags: 0
@@ -13216,8 +13210,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 91, y: -259}
-  m_SizeDelta: {x: 61.9976, y: 61.9976}
+  m_AnchoredPosition: {x: 81.0531, y: -259}
+  m_SizeDelta: {x: 42.1038, y: 42.104}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2025170144
 MonoBehaviour:
@@ -13231,7 +13225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2d86286dba544fbad9458555e01829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Content: Wellington Barracks
+  Content: "Wellington Barracks \u5A01\u9748\u9813\u5175\u623F"
 --- !u!1818360610 &2025170145
 ScaleConstraint:
   m_ObjectHideFlags: 0

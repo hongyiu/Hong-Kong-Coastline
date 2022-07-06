@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 
-public class Marker : MonoBehaviour
+public class Dialog : MonoBehaviour
 {
 	[TextArea(3,10)]
 	public string Content;
