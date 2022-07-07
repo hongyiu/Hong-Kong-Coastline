@@ -36,7 +36,8 @@ public class FirebaseManager : MonoBehaviour
     public GameObject loginButton;
     public GameObject logoutButton;
     public Text logoutText;
-
+    public Text highestScoreText;
+    public string Location;
     
     //User Data variables
     private int highestScore;
@@ -136,6 +137,17 @@ public class FirebaseManager : MonoBehaviour
         }
     }
 
+    public void LoadScoreData(string location)
+    {
+        Debug.Log("Start get score from firebase realtime database");
+        StartCoroutine(LoadScore(location));
+    }
+
+    public void ShowScoreData()
+    {
+        highestScoreText.text = "Highest Score: " + highestScore.ToString();
+    }
+
     private IEnumerator Login(string _email, string _password)
     {
         //Call the Firebase auth signin function passing the email and password
@@ -182,6 +194,7 @@ public class FirebaseManager : MonoBehaviour
             logoutText.text = User.Email + " (logout)";
             loginButton.SetActive(false);
             logoutButton.SetActive(true);
+            StartCoroutine(LoadScore(Location));
             UIManager.instance.QuitAuth();
         }
     }
@@ -287,7 +300,7 @@ public class FirebaseManager : MonoBehaviour
 
     private IEnumerator LoadScore(string _location)
     {
-        
+    
         var DBTask = DBreference.Child("users").Child(User.UserId).Child("score").Child(_location).GetValueAsync();
 
         yield return new WaitUntil(predicate: () => DBTask.IsCompleted);
@@ -307,6 +320,7 @@ public class FirebaseManager : MonoBehaviour
             }
             else
             {
+                highestScoreText.text = "Score: " + snapshot.Value.ToString();
                 highestScore = int.Parse(snapshot.Value.ToString());
             }
         }
