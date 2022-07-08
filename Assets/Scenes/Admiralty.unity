@@ -160,8 +160,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 640, y: -127.6}
-  m_SizeDelta: {x: 1260, y: 235.2}
+  m_AnchoredPosition: {x: 512, y: -127.6}
+  m_SizeDelta: {x: 1004, y: 235.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &11796556
 MonoBehaviour:
@@ -1014,12 +1014,12 @@ RectTransform:
   - {fileID: 963875713}
   - {fileID: 1195760955}
   - {fileID: 252574749}
+  - {fileID: 1194672218}
   - {fileID: 281418493}
   - {fileID: 478495173}
   - {fileID: 315069735}
   - {fileID: 454747340}
   - {fileID: 1313301607}
-  - {fileID: 1194672218}
   m_Father: {fileID: 1486301589}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1670,7 +1670,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 252574748}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1967,8 +1967,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 630, y: -315.5}
-  m_SizeDelta: {x: 1260, y: 118.2}
+  m_AnchoredPosition: {x: 502, y: -315.5}
+  m_SizeDelta: {x: 1004, y: 118.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274622403
 MonoBehaviour:
@@ -2132,7 +2132,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 148714166}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.415}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2279,34 +2279,36 @@ MonoBehaviour:
     - The sunset color is like a golden bell
     - The golden bell of the Wellington Barracks
     CorrectAnswer: 4
-  - Question: This is a question. (answer 4)
+  - Question: Which road was formerly known as the corner of death?
     Answers:
-    - Answer 1
-    - Answer 2
-    - Answer 3
-    - Answer 4
-    CorrectAnswer: 4
-  - Question: This is a question. (answer 3)
-    Answers:
-    - Answer 1
-    - Answer 2
-    - Answer 3
-    - Answer 4
-    CorrectAnswer: 3
-  - Question: This is a question. (answer 2)
-    Answers:
-    - Answer 1
-    - Answer 2
-    - Answer 3
-    - Answer 4
-    CorrectAnswer: 2
-  - Question: This is a question. (answer 1)
-    Answers:
-    - Answer 1
-    - Answer 2
-    - Answer 3
-    - Answer 4
+    - Queensway
+    - Harcourt Road
+    - Connaught Road Central
+    - Lung Wo Road
     CorrectAnswer: 1
+  - Question: What is the Touch Base Policy?
+    Answers:
+    - Rules of baseball
+    - Policy to make smugglers who can smuggle into Hong Kong urban areas become
+      Hong Kong residents
+    - First-come, first-served rule for becoming a Hong Kong citizen
+    - The quota allotted for smugglers to become Hong Kong citizens
+    CorrectAnswer: 2
+  - Question: What was the main use of the land in Admiralty in the past?
+    Answers:
+    - Residential
+    - Commercial
+    - Industrial
+    - Military
+    CorrectAnswer: 4
+  - Question: How the British Army prevented the Japanese from occupying the HMS
+      Tamar during World War II?
+    Answers:
+    - Defend to the last
+    - Set up dynamite traps on HMS Tamar
+    - Sink HMS Tamar
+    - Drive away HMS Tamar
+    CorrectAnswer: 3
   options:
   - {fileID: 1771143236}
   - {fileID: 923143671}
@@ -2423,7 +2425,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 148714166}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3716,8 +3718,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 640, y: -506.59998}
-  m_SizeDelta: {x: 1260, y: 502.8}
+  m_AnchoredPosition: {x: 512, y: -506.59998}
+  m_SizeDelta: {x: 1004, y: 502.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &430175621
 MonoBehaviour:
@@ -3994,7 +3996,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 148714166}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4281,7 +4283,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 148714166}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5307,7 +5309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &608790816
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5603,28 +5605,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655178566}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa2d86286dba544fbad9458555e01829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Content: "On November 28, 1957, the British government decided to close the naval
-    dock, considering that the strategic position of Hong Kong was not as important
-    as it used to be. At the end of 1959, the Navy Yard ended.\n\nBefore the war,
-    Hong Kong was sparsely populated, and the roads between Central and Wan Chai,
-    even if they were narrow, would not be congested. After the war, the population
-    surged and the number of vehicles increased. There was a right-angle bend outside
-    the Navy Yard (that is, outside the United Centre \u7D71\u4E00\u4E2D\u5FC3 today),
-    which happened to form a neck area, affecting the traffic between the two areas,
-    causing serious congestion, and even more, some vehicles were speeding. , often
-    lead to traffic accidents, so the bottle neck position is also known as \"death
-    corner\". In addition, with the development of the Central Business District,
-    it is necessary to extend to the east and west. Therefore, the reconstruction
-    of the naval dock will not only open the road, but also contribute to economic
-    development.\n\nIn 1959, the Hong Kong government decided to spend 112 million
-    dollars to purchase the land on the southern side of the Navy Yard, and the government
-    would develop and widen the road section of the old dock so that vehicles could
-    go directly from Connaught Road in Central to Gloucester Road in Wan Chai."
+  Content: The naval dock at the end of the nineteenth century is still in its early
+    stages and has no scale. Arsenal Street is named after the arsenal there. The
+    Tamar was originally a British troop transport ship, which had been berthed in
+    Victoria Harbour for a long time. During World War II, it was sunk by the British
+    to prevent occupation by the Japanese army. After World War II, the naval base
+    was named after Tamar as a memorial.
 --- !u!114 &655178569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5676,7 +5667,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655178566}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -7402,8 +7393,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 630, y: -187.29999}
-  m_SizeDelta: {x: 1260, y: 118.2}
+  m_AnchoredPosition: {x: 502, y: -187.29999}
+  m_SizeDelta: {x: 1004, y: 118.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &923143673
 MonoBehaviour:
@@ -7626,23 +7617,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2d86286dba544fbad9458555e01829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Content: "On November 28, 1957, the British government decided to close the naval
-    dock, considering that the strategic position of Hong Kong was not as important
-    as it used to be. At the end of 1959, the Navy Yard ended.\n\nBefore the war,
-    Hong Kong was sparsely populated, and the roads between Central and Wan Chai,
-    even if they were narrow, would not be congested. After the war, the population
-    surged and the number of vehicles increased. There was a right-angle bend outside
-    the Navy Yard (that is, outside the United Centre \u7D71\u4E00\u4E2D\u5FC3 today),
-    which happened to form a neck area, affecting the traffic between the two areas,
-    causing serious congestion, and even more, some vehicles were speeding. , often
-    lead to traffic accidents, so the bottle neck position is also known as \"death
-    corner\". In addition, with the development of the Central Business District,
-    it is necessary to extend to the east and west. Therefore, the reconstruction
-    of the naval dock will not only open the road, but also contribute to economic
-    development.\n\nIn 1959, the Hong Kong government decided to spend 112 million
-    dollars to purchase the land on the southern side of the Navy Yard, and the government
-    would develop and widen the road section of the old dock so that vehicles could
-    go directly from Connaught Road in Central to Gloucester Road in Wan Chai."
+  Content: 'In 1854, Wellington Battery was built in the garden on Harcourt Road
+    facing the sea, with nine cannons, and an army hospital and several barracks
+    were built behind it, named Wellington Barracks.
+
+    Later, Wellington Battery
+    and hospital were dismantled, and the barracks were expanded. After the Second
+    World War, the barracks are still used in modern times. In 1978, the barracks
+    was handed over to the Hong Kong government for development.'
 --- !u!114 &948051573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7694,7 +7676,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 948051570}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -7919,7 +7901,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963875712}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -8072,7 +8054,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983649653}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -9485,7 +9467,7 @@ RectTransform:
   - {fileID: 1865858354}
   - {fileID: 567831198}
   m_Father: {fileID: 148714166}
-  m_RootOrder: 17
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9560,7 +9542,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194672217}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -9640,7 +9622,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195760954}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -10908,7 +10890,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 148714166}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.132}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11959,8 +11941,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 630, y: -443.69998}
-  m_SizeDelta: {x: 1260, y: 118.2}
+  m_AnchoredPosition: {x: 502, y: -443.69998}
+  m_SizeDelta: {x: 1004, y: 118.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1386378934
 MonoBehaviour:
@@ -14485,7 +14467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14816,8 +14798,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 630, y: -59.1}
-  m_SizeDelta: {x: 1260, y: 118.2}
+  m_AnchoredPosition: {x: 502, y: -59.1}
+  m_SizeDelta: {x: 1004, y: 118.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1771143238
 MonoBehaviour:
@@ -16026,7 +16008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
