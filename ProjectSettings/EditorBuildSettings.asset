@@ -14,10 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Admiralty.unity
     guid: e60f13a8991144c35a23486189b76485
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Map 2.unity
     guid: a568ac4a54d9d4f5e83c8fe026a333a9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Map 3.unity
     guid: 1db43b2b34b28415f8df51a310492520
+  - enabled: 1
+    path: Assets/Scenes/Central.unity
+    guid: 0d977ad5bdb244c298133b645ee183aa
   m_configObjects: {}
