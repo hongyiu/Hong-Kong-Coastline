@@ -123,6 +123,141 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &8824843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8824844}
+  - component: {fileID: 8824848}
+  - component: {fileID: 8824847}
+  - component: {fileID: 8824846}
+  - component: {fileID: 8824845}
+  m_Layer: 5
+  m_Name: Marker (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8824844
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8824843}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1571590067}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -20, y: -20}
+  m_SizeDelta: {x: 40, y: 40}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &8824845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8824843}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa2d86286dba544fbad9458555e01829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Content: "Admiralty Station \u91D1\u9418\u7AD9\n\nNavy Dock \u6D77\u8ECD\u8239\u5862"
+--- !u!114 &8824846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8824843}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 8824847}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8824847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8824843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6f970cbdbd6f242ea9a725a7c17d523b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &8824848
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8824843}
+  m_CullTransparentMesh: 1
 --- !u!1 &11796554
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,9 +915,9 @@ RectTransform:
   m_Father: {fileID: 655178567}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -20, y: -20}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &92134352
@@ -1004,6 +1139,7 @@ RectTransform:
   m_Children:
   - {fileID: 983649654}
   - {fileID: 655178567}
+  - {fileID: 1571590067}
   - {fileID: 948051571}
   - {fileID: 963875713}
   - {fileID: 1195760955}
@@ -1429,7 +1565,7 @@ RectTransform:
   - {fileID: 1421813867}
   - {fileID: 648568474}
   m_Father: {fileID: 148714166}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1978,7 +2114,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 148714166}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -35.834}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2137,42 +2273,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IntQnA:
-  - Question: What is the name of Admiralty (golden bell) related to?
+  - Question: In 1959, what did the construction site personnel excavate at the Drama
+      Theater to prove that it was close to the waterfront?
     Answers:
-    - The bell of the passing tram
-    - Bell used for rituals often held at the corner of death
-    - The sunset color is like a golden bell
-    - The golden bell of the Wellington Barracks
+    - 'Qing Dynasty '
+    - Qing Dynasty Porcelain
+    - Qing Dynasty Stele
+    - Qing Dynasty Cannon
     CorrectAnswer: 4
-  - Question: Which road was formerly known as the corner of death?
+  - Question: Which of the following was the site of the first major post-war reclamation
+      project in Central?
     Answers:
-    - Queensway
-    - Harcourt Road
-    - Connaught Road Central
-    - Lung Wo Road
+    - Edinburgh Place
+    - Chater Garden
+    - Statue Square
+    - Central Plaza
     CorrectAnswer: 1
-  - Question: What is the Touch Base Policy?
+  - Question: The Star Ferry Pier has been demolished three times so far. What was
+      the result of the last time?
     Answers:
-    - Rules of baseball
-    - Policy to make smugglers who can smuggle into Hong Kong urban areas become
-      Hong Kong residents
-    - First-come, first-served rule for becoming a Hong Kong citizen
-    - The quota allotted for smugglers to become Hong Kong citizens
+    - Relocated to Tsim Sha Tsui Waterfront
+    - Relocated to near IFC Phase II
+    - Relocated to Stanley Waterfront
+    - Permanent removal
     CorrectAnswer: 2
-  - Question: What was the main use of the land in Admiralty in the past?
+  - Question: When Queen Elizabeth II visited Hong Kong in 1975, at which pier did
+      she land on the steamship?
     Answers:
-    - Residential
-    - Commercial
-    - Industrial
-    - Military
+    - Blake Pier
+    - Piers 9 of Central Pier
+    - Star Ferry Pier
+    - Queen's Pier
     CorrectAnswer: 4
-  - Question: How the British Army prevented the Japanese from occupying the HMS
-      Tamar during World War II?
+  - Question: Originally, there was no roof at Blake Pier. What materials were used
+      to build the roof in 1903?
     Answers:
-    - Defend to the last
-    - Set up dynamite traps on HMS Tamar
-    - Sink HMS Tamar
-    - Drive away HMS Tamar
+    - Wood
+    - Bamboo
+    - Straw
+    - Steel
     CorrectAnswer: 3
   options:
   - {fileID: 1771143236}
@@ -2289,7 +2428,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 148714166}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -14.878}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2315,22 +2454,19 @@ MonoBehaviour:
 
 
     On April 2, 1890, the
-    Duke of Connaught, the British prince, attended the stone-standing ceremony at
-    the newly reclaimed land.
-
-    Therefore, the newly reclaimed land along the
-    coast is called Connaught Road, and the project was completed in 1903.
+    Duke of Connaught, the British prince, attended the stone-setting ceremony at
+    the newly reclaimed land, so the new coastal land was called Connaught Road.
+    The project was completed in 1903.
 
 
-    Since
-    the beginning of the 20th century, Connaught Road Central has been regarded as
-    the most prosperous banking and commercial center in Hong Kong. The offices of
-    several government agencies are also located here. These buildings, with a strong
-    classical color, are all treasures, brick by brick. However, in the 1950s, with
-    the rapid development of Hong Kong''s economy, the offices with only a few storeys
-    were gradually insufficient, and these buildings were demolished and rebuilt
-    one by one. Many high-rise buildings on the original site today are already second
-    or third generation buildings.'
+    Since the beginning of the 20th century,
+    Connaught Road Central has been regarded as the most prosperous banking and commercial
+    center in Hong Kong. The offices of several government agencies are also located
+    here. These buildings, with a strong classical color, are all treasures, brick
+    by brick. However, in the 1950s, with the rapid development of Hong Kong''s economy,
+    the offices with only a few storeys were gradually insufficient, and these buildings
+    were demolished and rebuilt one by one. Many high-rise buildings on the original
+    site today are already second or third generation buildings.'
 --- !u!114 &315069737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3580,7 +3716,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 148714166}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 75.678}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3725,7 +3861,7 @@ RectTransform:
   - {fileID: 1960691056}
   - {fileID: 2033575610}
   m_Father: {fileID: 148714166}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4024,7 +4160,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 148714166}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -36.759}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4451,9 +4587,9 @@ RectTransform:
   m_Father: {fileID: 655178567}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 85, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -20}
   m_SizeDelta: {x: 170, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &499676531
@@ -4489,9 +4625,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Edinburgh Place
-
-    Hong Kong City Hall'
+  m_Text: Edinburgh Place
 --- !u!222 &499676532
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5234,7 +5368,7 @@ GameObject:
   - component: {fileID: 655178569}
   - component: {fileID: 655178568}
   m_Layer: 5
-  m_Name: MarkerPanel (1)
+  m_Name: EdinburghPlace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5259,8 +5393,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 146, y: -143.8}
-  m_SizeDelta: {x: 220, y: 50}
+  m_AnchoredPosition: {x: 179, y: -100}
+  m_SizeDelta: {x: 220, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &655178568
 MonoBehaviour:
@@ -5274,26 +5408,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2d86286dba544fbad9458555e01829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Content: "Edinburgh Square is named after the Duke of Edinburgh, the husband of
+  Content: Edinburgh Square is named after the Duke of Edinburgh, the husband of
     Queen Elizabeth II. Edinburgh Square was the first large-scale reclamation project
     in Central after the war. It was announced in 1948, started in 1951 and completed
-    in 1955. Subsequently, Star and Queen's Wharf were relocated there.\n\nThe landmark
-    here is the Hong Kong City Hall. Since the demolition of the first-generation
-    assembly hall in 1947, society and theories have demanded the construction of
-    a new assembly hall. At the time, people believed that Hong Kong\u2019s high
-    property prices and lack of community space made it difficult to find rest space.
-    In addition to pub, tea houses, dance halls and cinemas, there is a lack of elegant
-    places.\n\nIn the 1950s, the Hong Kong government commissioned the Urban Council
-    to plan the construction of a new town hall, which was completed and opened in
-    1962. The opening ceremony was presided over by the Governor of Hong Kong, Sir
-    Robert Brown Black.\n\nThe Hong Kong City Hall played an important role in the
-    development of literature and art after the war. There is an art gallery there,
-    which was split into today's Hong Kong Museum of History and the Hong Kong Museum
-    of Art. In addition, the first Hong Kong Arts Festival in 1973, the first Asian
-    Arts Festival in 1976, and the first Hong Kong International Film Festival in
-    1977 were all held in the City Hall. In view of its important historical status,
-    the Hong Kong Antiquities and Monuments Office has classified it as a Grade 1
-    Historic Building."
+    in 1955. Subsequently, Star and Queen's Wharf were relocated there.
 --- !u!114 &655178569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5679,6 +5797,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &734838027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 734838028}
+  - component: {fileID: 734838030}
+  - component: {fileID: 734838029}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &734838028
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734838027}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1571590067}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 85, y: 0}
+  m_SizeDelta: {x: 170, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &734838029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734838027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.039215688, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 14
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Hong Kong City Hall
+--- !u!222 &734838030
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734838027}
+  m_CullTransparentMesh: 1
 --- !u!1 &758094821
 GameObject:
   m_ObjectHideFlags: 0
@@ -7411,7 +7609,7 @@ RectTransform:
   - {fileID: 906140182}
   - {fileID: 1898786823}
   m_Father: {fileID: 148714166}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7635,7 +7833,7 @@ RectTransform:
   - {fileID: 1353434300}
   - {fileID: 453745787}
   m_Father: {fileID: 148714166}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9213,7 +9411,7 @@ RectTransform:
   - {fileID: 1865858354}
   - {fileID: 567831198}
   m_Father: {fileID: 148714166}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9354,7 +9552,7 @@ RectTransform:
   - {fileID: 1443296432}
   - {fileID: 1338116689}
   m_Father: {fileID: 148714166}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13118,6 +13316,158 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569845663}
   m_CullTransparentMesh: 1
+--- !u!1 &1571590066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1571590067}
+  - component: {fileID: 1571590071}
+  - component: {fileID: 1571590070}
+  - component: {fileID: 1571590069}
+  - component: {fileID: 1571590068}
+  m_Layer: 5
+  m_Name: HongKongCityHall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1571590067
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571590066}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8824844}
+  - {fileID: 734838028}
+  m_Father: {fileID: 148714166}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 105, y: -154}
+  m_SizeDelta: {x: 200, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1571590068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571590066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa2d86286dba544fbad9458555e01829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Content: "The landmark of Edinburgh Square is the Hong Kong City Hall. Since the
+    demolition of the first-generation assembly hall in 1947, society and theories
+    have demanded the construction of a new assembly hall. At the time, people believed
+    that Hong Kong\u2019s high property prices and lack of community space made it
+    difficult to find rest space. In addition to pub, tea houses, dance halls and
+    cinemas, there is a lack of elegant places.\n\nIn the 1950s, the Hong Kong government
+    commissioned the Urban Council to plan the construction of a new town hall, which
+    was completed and opened in 1962. The opening ceremony was presided over by the
+    Governor of Hong Kong, Sir Robert Brown Black.\n\nThe Hong Kong City Hall played
+    an important role in the development of literature and art after the war. There
+    is an art gallery there, which was split into today's Hong Kong Museum of History
+    and the Hong Kong Museum of Art. In addition, the first Hong Kong Arts Festival
+    in 1973, the first Asian Arts Festival in 1976, and the first Hong Kong International
+    Film Festival in 1977 were all held in the City Hall. In view of its important
+    historical status, the Hong Kong Antiquities and Monuments Office has classified
+    it as a Grade 1 Historic Building."
+--- !u!114 &1571590069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571590066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 8824847}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1571590070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571590066}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.79607844}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1571590071
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571590066}
+  m_CullTransparentMesh: 1
 --- !u!1 &1588307259
 GameObject:
   m_ObjectHideFlags: 0
@@ -14275,7 +14625,7 @@ RectTransform:
   - {fileID: 773333912}
   - {fileID: 1307054506}
   m_Father: {fileID: 148714166}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
