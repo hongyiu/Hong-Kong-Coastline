@@ -19,7 +19,7 @@ public class QuizManager : MonoBehaviour
     public string Location;
 
     int totalQuestions = 0;
-    private int score;
+    public int score;
 
     private FirebaseManager firebaseManager;
 
@@ -49,7 +49,7 @@ public class QuizManager : MonoBehaviour
         firebaseManager = GameObject.Find("FirebaseManager").GetComponent<FirebaseManager>();
         if (firebaseManager.User != null)
         { 
-            firebaseManager.SaveScoreData(Location, score);
+            firebaseManager.UpdateScoreData(Location, score);
         }
     }
 

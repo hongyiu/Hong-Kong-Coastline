@@ -44,6 +44,8 @@ public class FirebaseManager : MonoBehaviour
     // [Header("UserData")]
     // public TMP_InputField scoreField;
 
+    private QuizManager quizManager;
+
     void Awake()
     {
         //Check that all of the necessary dependencies for Firebase are present on the system
@@ -127,14 +129,11 @@ public class FirebaseManager : MonoBehaviour
         ClearLoginFeilds();
     }
 
-    public void SaveScoreData(string location, int score)
+    public void UpdateScoreData(string location, int score)
     {
         Debug.Log("Start save data to firebase realtime database");
-        StartCoroutine(LoadScore(location));
-        if (score > highestScore)
-        {
+
             StartCoroutine(UpdateScore(location, score));
-        }
     }
 
     public void LoadScoreData(string location)
@@ -194,7 +193,9 @@ public class FirebaseManager : MonoBehaviour
             logoutText.text = User.Email + " (logout)";
             loginButton.SetActive(false);
             logoutButton.SetActive(true);
-            StartCoroutine(LoadScore(Location));
+
+            quizManager = GameObject.Find("QuizManager").GetComponent<QuizManager>();
+            UpdateScoreData(Location, int.Parse(quizManager.score.ToString()));
             UIManager.instance.QuitAuth();
         }
     }
@@ -283,24 +284,27 @@ public class FirebaseManager : MonoBehaviour
     
     private IEnumerator UpdateScore(string _location, int _score)
     {
-        //Set the currently logged in user score
-        var DBTask = DBreference.Child("users").Child(User.UserId).Child("score").Child(_location).SetValueAsync(_score);
+        LoadScoreData(_location);
+        if (_score > highestScore)
+            {
+            //Set the currently logged in user score
+            var DBTask = DBreference.Child("users").Child(User.UserId).Child("score").Child(_location).SetValueAsync(_score);
         
-        yield return new WaitUntil(predicate: () => DBTask.IsCompleted);
+            yield return new WaitUntil(predicate: () => DBTask.IsCompleted);
 
-        if (DBTask.Exception != null)
-        {
-            Debug.LogWarning(message: $"Failed to register task with {DBTask.Exception}");
-        }
-        else
-        {
-            //Score is now updated
+            if (DBTask.Exception != null)
+            {
+                Debug.LogWarning(message: $"Failed to register task with {DBTask.Exception}");
+            }
+            else
+            {
+                //Score is now updated
+            }
         }
     }
 
     private IEnumerator LoadScore(string _location)
     {
-    
         var DBTask = DBreference.Child("users").Child(User.UserId).Child("score").Child(_location).GetValueAsync();
 
         yield return new WaitUntil(predicate: () => DBTask.IsCompleted);
