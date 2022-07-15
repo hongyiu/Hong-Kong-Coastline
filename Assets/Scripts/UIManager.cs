@@ -7,12 +7,17 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
 
     //Screen object variables
+    [Header("Game Panel")]
     public GameObject MapPanel;
     public GameObject QuizPanel;
 
     public GameObject AuthPanel;
     public GameObject loginUI;
     public GameObject registerUI;
+
+    [Header("Game Object")]
+    public GameObject scoreSavedMessage;
+    public GameObject QuizAuthButton;
 
     private void Awake()
     {
@@ -30,8 +35,9 @@ public class UIManager : MonoBehaviour
     //Functions to change to Quiz Panel
     public void StartQuiz() //Start Quiz
     {
-        MapPanel.SetActive(false);
+        scoreSavedMessage.SetActive(false);
         QuizPanel.SetActive(true);
+        MapPanel.SetActive(false);
     }
     public void QuitQuiz() //Finish Quiz
     {
@@ -57,5 +63,17 @@ public class UIManager : MonoBehaviour
     {
         loginUI.SetActive(false);
         registerUI.SetActive(true);
+    }
+
+    public void EnableScoreSavedMessage()
+    {
+        Debug.Log("Set scoreSavedMessage to true");
+        scoreSavedMessage.SetActive(true);
+    }
+
+    public void DisableQuizAuthButton()
+    {
+        Debug.Log("Set QuizAuthButton to false");
+        QuizAuthButton.SetActive(false);
     }
 }

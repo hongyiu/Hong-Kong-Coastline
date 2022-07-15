@@ -193,6 +193,7 @@ public class FirebaseManager : MonoBehaviour
             logoutText.text = User.Email + " (logout)";
             loginButton.SetActive(false);
             logoutButton.SetActive(true);
+            UIManager.instance.DisableQuizAuthButton();
 
             quizManager = GameObject.Find("QuizManager").GetComponent<QuizManager>();
             UpdateScoreData(Location, int.Parse(quizManager.score.ToString()));
@@ -286,7 +287,7 @@ public class FirebaseManager : MonoBehaviour
     {
         LoadScoreData(_location);
         if (_score > highestScore)
-            {
+        {
             //Set the currently logged in user score
             var DBTask = DBreference.Child("users").Child(User.UserId).Child("score").Child(_location).SetValueAsync(_score);
         
@@ -299,7 +300,14 @@ public class FirebaseManager : MonoBehaviour
             else
             {
                 //Score is now updated
+                Debug.Log("Score is now updated");
+                UIManager.instance.EnableScoreSavedMessage();
             }
+        }
+        else
+        {
+            highestScoreText.text = "Your highest is score is " + highestScore.ToString();
+            UIManager.instance.EnableScoreSavedMessage();
         }
     }
 
