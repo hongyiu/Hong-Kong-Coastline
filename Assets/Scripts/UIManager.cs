@@ -76,4 +76,9 @@ public class UIManager : MonoBehaviour
         Debug.Log("Set QuizAuthButton to false");
         QuizAuthButton.SetActive(false);
     }
+        public void EnableQuizAuthButton()
+    {
+        Debug.Log("Set QuizAuthButton to false");
+        QuizAuthButton.SetActive(true);
+    }
 }

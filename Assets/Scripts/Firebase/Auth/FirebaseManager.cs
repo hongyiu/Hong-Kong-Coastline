@@ -68,11 +68,13 @@ public class FirebaseManager : MonoBehaviour
             logoutText.text = User.Email + " (logout)";
             loginButton.SetActive(false);
             logoutButton.SetActive(true);
+            UIManager.instance.DisableQuizAuthButton();
         } else
         {
             loginButton.SetActive(true);
             logoutButton.SetActive(false);
             logoutText.text = "logout";
+            UIManager.instance.EnableQuizAuthButton();
         }
     }
 
@@ -197,6 +199,7 @@ public class FirebaseManager : MonoBehaviour
 
             quizManager = GameObject.Find("QuizManager").GetComponent<QuizManager>();
             UpdateScoreData(Location, int.Parse(quizManager.score.ToString()));
+            UIManager.instance.DisableQuizAuthButton();
             UIManager.instance.QuitAuth();
         }
     }
