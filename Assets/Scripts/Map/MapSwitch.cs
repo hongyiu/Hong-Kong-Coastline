@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,42 +27,41 @@ public class MapSwitch : MonoBehaviour
         if (index >= maps.Length - 1)
         {
             index = maps.Length - 1;
+            maps[index].gameObject.SetActive(true);
             NextButton.gameObject.SetActive(false);
         }
         if (index <= 0)
         {
             index = 0;
-            maps[0].gameObject.SetActive(true);
+            maps[index].gameObject.SetActive(true);
             PrevButton.gameObject.SetActive(false);
-
         }
     }
 
     public void Next()
     {
-        index += 1;
-
         for (int i = 0; i < maps.Length; i++)
         {
-            maps[i].gameObject.SetActive(false);
-            maps[index].gameObject.SetActive(true);
-            PrevButton.gameObject.SetActive(true);
+            maps[i].gameObject.SetActive(false);    
         }
 
+        index += 1;
         Debug.Log(index);
+        maps[index].gameObject.SetActive(true);
+        PrevButton.gameObject.SetActive(true);
+        
     }
 
     public void Prev()
     {
-        index -= 1;
-
         for (int i = 0; i < maps.Length; i++)
         {
             maps[i].gameObject.SetActive(false);
-            maps[index].gameObject.SetActive(true);
-            NextButton.gameObject.SetActive(true);
         }
 
+        index -= 1;
         Debug.Log(index);
+        maps[index].gameObject.SetActive(true);
+        NextButton.gameObject.SetActive(true);
     }
 }
