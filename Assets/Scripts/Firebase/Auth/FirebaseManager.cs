@@ -68,13 +68,13 @@ public class FirebaseManager : MonoBehaviour
             logoutText.text = User.Email + " (logout)";
             loginButton.SetActive(false);
             logoutButton.SetActive(true);
-            UIManager.instance.DisableQuizAuthButton();
+            // UIManager.instance.DisableQuizAuthButton();
         } else
         {
             loginButton.SetActive(true);
             logoutButton.SetActive(false);
             logoutText.text = "logout";
-            UIManager.instance.EnableQuizAuthButton();
+            // UIManager.instance.EnableQuizAuthButton();
         }
     }
 
